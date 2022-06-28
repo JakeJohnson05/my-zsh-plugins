@@ -1,7 +1,6 @@
-#!/bin/zsh
-emulate zsh
+fpath+="${0:A:h}/autocompletions"
 
-autoload -Uz ${${(%):-%x}:P:h}/pip3-autocompletions/pip3-autocompletions.zsh
+autoload -Uz ${0:A:h}/pip3-autocompletions/pip3-autocompletions.zsh
 
 {
 	pip3-autocompletions.zsh
