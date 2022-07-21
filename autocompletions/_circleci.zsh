@@ -788,3 +788,5 @@ function _circleci_version {
 		'--skip-update-check[Skip the check for updates check run before every command.]' \
 		'--token[your token for using CircleCI, also CIRCLECI_CLI_TOKEN]:'
 }
+
+_circleci "$@"
